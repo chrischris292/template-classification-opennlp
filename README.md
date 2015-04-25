@@ -27,7 +27,7 @@ Training Data:
 Your training data should be a single line with a sentence and a category seperated by a tab. *Note that all words should have a single space between them.
 For example,
 ```
-Russell Wilson is a super bowl quarterback	Sports	
+Sports	Russell Wilson is a super bowl quarterback	
 ```
 
 ### 1. Run PredictionIO
@@ -49,7 +49,7 @@ $ pio status
 ### 2. Download the Engine Template
 
 ```
-git clone https://github.com/BensonQiu/predictionio-template-classification-textClassifier
+git clone ....FILL IN LATER....
 ```
 
 ### 3. Create a new application
@@ -107,4 +107,4 @@ $ pio deploy
 After deploying successfully, you can view the status of your engine at [http://localhost:8000](http://localhost:8000).
 
 ### 6. Using the Engine
-To do a sample query, run `python query.py` from the root directory of your engine. Customize the query by modifying the JSON `"sentence" : "Seattle Seahawks"` in `query.py`. The engine will return a JSON object containing predicted energy usage.
+To do a sample query, run `python send_data.py` from the root directory of your engine. Customize the query by modifying the JSON `"sentence" : "Seattle Seahawks"` in `send_data.py`. The engine will return a JSON object containing predicted energy usage.
