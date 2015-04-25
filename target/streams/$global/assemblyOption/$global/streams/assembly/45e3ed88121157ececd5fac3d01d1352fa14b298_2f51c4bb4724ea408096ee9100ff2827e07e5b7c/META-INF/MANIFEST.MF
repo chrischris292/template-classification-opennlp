@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: snajper
+Build-Jdk: 1.6.0_31
+Specification-Title: Java Architecture for XML Binding
+Specification-Version: 2.2.7
+Specification-Vendor: Oracle Corporation
+Extension-Name: javax.xml.bind
+

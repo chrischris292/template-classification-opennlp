@@ -1,0 +1,20 @@
+{
+  "id": "default",
+  "description": "Default settings",
+  "engineFactory": "io.prediction.opennlp.engine.EngineFactory",
+  "datasource": {
+    "params" : {
+      "appId" : 13,
+      "cutoff": 2
+    }
+  },
+  "algorithms": [
+    {
+      "name": "algo",
+      "params": {
+        "iteration": 300,
+        "smoothing": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Implementation-Version: 3.5.1
+Built-Date: 2015-01-30
+Created-By: Stanford JavaNLP (jgauthie)
+Main-class: edu.stanford.nlp.pipeline.StanfordCoreNLP
+

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "predictionio/predictionio": "~0.8.3"
+    }
+}
