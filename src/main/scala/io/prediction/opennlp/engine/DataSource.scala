@@ -28,8 +28,7 @@ class DataSource(val dsp: DataSourceParams) extends PDataSource[
     events.map { event =>
       val phrase = event.properties.get[String]("phrase")
       val Interest = event.properties.get[String]("Interest").replace(" ","_")
-      val string = phrase + Separator + Interest; 
-      string
+      s"$phrase $Interest"
     }.collect().toSeq
 
 

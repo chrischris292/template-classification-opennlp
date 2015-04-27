@@ -18284,3 +18284,45 @@ java.lang.NumberFormatException: For input string: "technology"
 2015-04-27 13:00:41,393 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
 2015-04-27 13:00:41,690 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
 2015-04-27 13:00:41,702 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
+2015-04-27 13:20:58,135 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/ChristopherChan/PredictionIO/pio_opennlp_finish/manifest.json
+2015-04-27 13:20:58,192 INFO  io.prediction.tools.console.Console$ [main] - Using command '/Users/ChristopherChan/PredictionIO/sbt/sbt' at the current working directory to build.
+2015-04-27 13:20:58,192 INFO  io.prediction.tools.console.Console$ [main] - If the path above is incorrect, this process will fail.
+2015-04-27 13:20:58,193 INFO  io.prediction.tools.console.Console$ [main] - Uber JAR disabled. Making sure lib/pio-assembly-0.9.2.jar is absent.
+2015-04-27 13:20:58,194 INFO  io.prediction.tools.console.Console$ [main] - Going to run: /Users/ChristopherChan/PredictionIO/sbt/sbt  package assemblyPackageDependency
+2015-04-27 13:21:11,329 INFO  io.prediction.tools.console.Console$ [main] - Build finished successfully.
+2015-04-27 13:21:11,330 INFO  io.prediction.tools.console.Console$ [main] - Looking for an engine...
+2015-04-27 13:21:11,339 INFO  io.prediction.tools.console.Console$ [main] - Found pio-corenlp-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-27 13:21:11,339 INFO  io.prediction.tools.console.Console$ [main] - Found pio-corenlp_2.10-0.1-SNAPSHOT.jar
+2015-04-27 13:21:11,350 INFO  io.prediction.tools.console.Console$ [main] - HADOOP_CONF_DIR is not set. Assuming HDFS is unavailable.
+2015-04-27 13:21:14,004 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-27 13:21:14,099 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/ChristopherChan/PredictionIO/pio_opennlp_finish/target/scala-2.10/pio-corenlp-assembly-0.1-SNAPSHOT-deps.jar to file:/Users/ChristopherChan/.pio_store/engines/pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0/330e8de73e1663ae26e00ab4896901e76a8678fd/pio-corenlp-assembly-0.1-SNAPSHOT-deps.jar
+2015-04-27 13:21:14,248 INFO  io.prediction.tools.RegisterEngine$ [main] - Copying file:/Users/ChristopherChan/PredictionIO/pio_opennlp_finish/target/scala-2.10/pio-corenlp_2.10-0.1-SNAPSHOT.jar to file:/Users/ChristopherChan/.pio_store/engines/pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0/330e8de73e1663ae26e00ab4896901e76a8678fd/pio-corenlp_2.10-0.1-SNAPSHOT.jar
+2015-04-27 13:21:14,265 INFO  io.prediction.tools.RegisterEngine$ [main] - Registering engine pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0 330e8de73e1663ae26e00ab4896901e76a8678fd
+2015-04-27 13:21:14,288 INFO  io.prediction.tools.console.Console$ [main] - Your engine is ready for training.
+2015-04-27 13:21:25,350 INFO  io.prediction.tools.console.Console$ [main] - Using existing engine manifest JSON at /Users/ChristopherChan/PredictionIO/pio_opennlp_finish/manifest.json
+2015-04-27 13:21:27,890 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-27 13:21:28,000 INFO  io.prediction.tools.RunWorkflow$ [main] - Submission command: /Users/ChristopherChan/PredictionIO/vendors/spark-1.2.1/bin/spark-submit --class io.prediction.workflow.CreateWorkflow --name PredictionIO Training: pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0 330e8de73e1663ae26e00ab4896901e76a8678fd () --jars file:/Users/ChristopherChan/.pio_store/engines/pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0/330e8de73e1663ae26e00ab4896901e76a8678fd/pio-corenlp_2.10-0.1-SNAPSHOT.jar,file:/Users/ChristopherChan/.pio_store/engines/pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0/330e8de73e1663ae26e00ab4896901e76a8678fd/pio-corenlp-assembly-0.1-SNAPSHOT-deps.jar --files /users/christopherchan/PredictionIO/conf/log4j.properties,/Users/ChristopherChan/PredictionIO/vendors/hbase-0.98.11/conf/hbase-site.xml --driver-class-path /users/christopherchan/PredictionIO/conf:/Users/ChristopherChan/PredictionIO/vendors/hbase-0.98.11/conf /Users/ChristopherChan/PredictionIO/lib/pio-assembly-0.9.2.jar --env PIO_STORAGE_SOURCES_HBASE_TYPE=hbase,PIO_ENV_LOADED=1,PIO_STORAGE_SOURCES_HBASE_HOSTS=0,PIO_STORAGE_REPOSITORIES_METADATA_NAME=predictionio_metadata,PIO_FS_BASEDIR=/Users/ChristopherChan/.pio_store,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOSTS=localhost,PIO_STORAGE_SOURCES_HBASE_HOME=/Users/ChristopherChan/PredictionIO/vendors/hbase-0.98.11,PIO_HOME=/users/christopherchan/PredictionIO,PIO_FS_ENGINESDIR=/Users/ChristopherChan/.pio_store/engines,PIO_STORAGE_SOURCES_HBASE_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_TYPE=elasticsearch,PIO_STORAGE_REPOSITORIES_METADATA_SOURCE=ELASTICSEARCH,PIO_STORAGE_REPOSITORIES_MODELDATA_SOURCE=LOCALFS,PIO_STORAGE_REPOSITORIES_EVENTDATA_NAME=predictionio_eventdata,PIO_STORAGE_SOURCES_ELASTICSEARCH_HOME=/Users/ChristopherChan/PredictionIO/vendors/elasticsearch-1.4.4,PIO_FS_TMPDIR=/Users/ChristopherChan/.pio_store/tmp,PIO_STORAGE_REPOSITORIES_MODELDATA_NAME=pio_,PIO_STORAGE_SOURCES_LOCALFS_HOSTS=/Users/ChristopherChan/.pio_store/models,PIO_STORAGE_REPOSITORIES_EVENTDATA_SOURCE=HBASE,PIO_CONF_DIR=/users/christopherchan/PredictionIO/conf,PIO_STORAGE_SOURCES_LOCALFS_PORTS=0,PIO_STORAGE_SOURCES_ELASTICSEARCH_PORTS=9300,PIO_STORAGE_SOURCES_LOCALFS_TYPE=localfs --engine-id pOoy0U0NqQPeeLTm5GSt2Dg10IylVBm0 --engine-version 330e8de73e1663ae26e00ab4896901e76a8678fd --engine-variant /Users/ChristopherChan/PredictionIO/pio_opennlp_finish/engine.json --verbosity 0
+2015-04-27 13:21:30,753 WARN  org.apache.hadoop.util.NativeCodeLoader [main] - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-04-27 13:21:32,200 INFO  io.prediction.controller.Engine [main] - Extracting datasource params...
+2015-04-27 13:21:32,386 INFO  io.prediction.workflow.WorkflowUtils$ [main] - No 'name' is found. Default empty String will be used.
+2015-04-27 13:21:32,404 INFO  io.prediction.controller.Engine [main] - Datasource params: (,DataSourceParams(13,2))
+2015-04-27 13:21:32,404 INFO  io.prediction.controller.Engine [main] - Extracting preparator params...
+2015-04-27 13:21:32,406 INFO  io.prediction.controller.Engine [main] - Preparator params: (,Empty)
+2015-04-27 13:21:32,418 INFO  io.prediction.controller.Engine [main] - Extracting serving params...
+2015-04-27 13:21:32,418 INFO  io.prediction.controller.Engine [main] - Serving params: (,Empty)
+2015-04-27 13:21:34,484 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Starting remoting
+2015-04-27 13:21:34,745 INFO  Remoting [sparkDriver-akka.actor.default-dispatcher-2] - Remoting started; listening on addresses :[akka.tcp://sparkDriver@172.20.10.3:49344]
+2015-04-27 13:21:36,282 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train
+2015-04-27 13:21:36,283 INFO  io.prediction.controller.Engine$ [main] - DataSource: io.prediction.opennlp.engine.DataSource@4792f119
+2015-04-27 13:21:36,284 INFO  io.prediction.controller.Engine$ [main] - Preparator: io.prediction.opennlp.engine.Preparator@23ca36d
+2015-04-27 13:21:36,284 INFO  io.prediction.controller.Engine$ [main] - AlgorithmList: List(io.prediction.opennlp.engine.Algorithm@2b80e5a9)
+2015-04-27 13:21:36,285 INFO  io.prediction.controller.Engine$ [main] - Data santiy check is on.
+2015-04-27 13:21:38,120 WARN  org.apache.hadoop.hbase.mapreduce.TableInputFormatBase [main] - Cannot resolve the host name for /172.20.10.3 because of javax.naming.NameNotFoundException: DNS name not found [response code 3]; remaining name '3.10.20.172.in-addr.arpa'
+2015-04-27 13:21:40,254 INFO  io.prediction.controller.Engine$ [main] - io.prediction.opennlp.engine.TrainingData does not support data sanity check. Skipping check.
+2015-04-27 13:21:40,255 INFO  io.prediction.controller.Engine$ [main] - io.prediction.opennlp.engine.PreparedData does not support data sanity check. Skipping check.
+2015-04-27 13:21:56,660 INFO  io.prediction.controller.Engine$ [main] - io.prediction.opennlp.engine.Model does not support data sanity check. Skipping check.
+2015-04-27 13:21:56,661 INFO  io.prediction.controller.Engine$ [main] - EngineWorkflow.train completed
+2015-04-27 13:21:56,662 INFO  io.prediction.controller.Engine [main] - engineInstanceId=AUz8HOKBZ0fU83P7DpLh
+2015-04-27 13:21:56,696 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Inserting persistent model
+2015-04-27 13:21:56,917 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Updating engine instance
+2015-04-27 13:21:56,932 INFO  io.prediction.workflow.CoreWorkflow$ [main] - Training completed successfully.
