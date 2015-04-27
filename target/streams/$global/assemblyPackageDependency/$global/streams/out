@@ -4,16 +4,16 @@
 [0m[[0minfo[0m] [0mIncluding from cache: ejml-0.23.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: javax.json-api-1.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: opennlp-maxent-3.0.3.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: xalan-2.7.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: xercesImpl-2.8.0.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: joda-time-2.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: xalan-2.7.0.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: jollyday-0.4.7.jar[0m
-[0m[[0minfo[0m] [0mIncluding from cache: stanford-corenlp-3.5.1.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: joda-time-2.1.jar[0m
 [0m[[0minfo[0m] [0mIncluding from cache: scala-library.jar[0m
+[0m[[0minfo[0m] [0mIncluding from cache: stanford-corenlp-3.5.1.jar[0m
 [0m[[0mdebug[0m] [0mCalculate mappings...[0m
 [0m[[0minfo[0m] [0mChecking every *.class/*.jar file's SHA-1.[0m
 [0m[[0minfo[0m] [0mMerging files...[0m
 [0m[[33mwarn[0m] [0mMerging 'META-INF/DEPENDENCIES' with strategy 'discard'[0m
 [0m[[33mwarn[0m] [0mMerging 'META-INF/MANIFEST.MF' with strategy 'discard'[0m
 [0m[[33mwarn[0m] [0mStrategy 'discard' was applied to 2 files[0m
-[0m[[0minfo[0m] [0mAssembly up to date: /Users/ChristopherChan/PredictionIO/FacebookOpenAcademy/target/scala-2.10/pio-corenlp-assembly-0.1-SNAPSHOT-deps.jar[0m
+[0m[[0minfo[0m] [0mAssembly up to date: /Users/ChristopherChan/PredictionIO/pio_opennlp_finish/target/scala-2.10/pio-corenlp-assembly-0.1-SNAPSHOT-deps.jar[0m

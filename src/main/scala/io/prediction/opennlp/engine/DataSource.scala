@@ -24,13 +24,12 @@ class DataSource(val dsp: DataSourceParams) extends PDataSource[
     TrainingData(phraseAndInterestToTrainingData(trainingTreeStrings))
   }
   private def allPhraseandInterests(sc: SparkContext): Seq[String] = {
-
     val events = Storage.getPEvents().find(appId = dsp.appId, entityType = Some("phrase"))(sc)
-
     events.map { event =>
       val phrase = event.properties.get[String]("phrase")
-      val Interest = event.properties.get[String]("Interest")
-      s"$phrase $Interest"
+      val Interest = event.properties.get[String]("Interest").replace(" ","_")
+      val string = phrase + Separator + Interest; 
+      string
     }.collect().toSeq
 
 

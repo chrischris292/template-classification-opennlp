@@ -11,6 +11,7 @@ class SeqDataStream(val data: Seq[String]) extends DataStream {
 
   override def nextToken(): String = {
     val nextToken = data(next)
+    println(nextToken)
     next += 1
     nextToken
   }
